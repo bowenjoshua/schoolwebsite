@@ -1,0 +1,125 @@
+.contact-hero {
+    background: linear-gradient(rgba(255, 107, 107, 0.8), rgba(255, 229, 229, 0.8)),
+                url('contact-bg.jpg') center/cover;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    border-bottom: 15px solid #FFE5E5;
+    border-radius: 0 0 50% 50% / 20px;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 3px 3px 0 #FF6B6B;
+}
+
+.contact-info {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(255, 107, 107, 0.1);
+    border: 3px solid #FFE5E5;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-card i {
+    font-size: 2.5rem;
+    color: #FF6B6B;
+    margin-bottom: 1rem;
+}
+
+.contact-card h2 {
+    color: #FF6B6B;
+    margin-bottom: 1rem;
+}
+
+.contact-card.location {
+    grid-column: span 2;
+}
+
+.map {
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.social-media h2 {
+    color: #FF6B6B;
+    margin-bottom: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-icon {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #FFE5E5;
+    transition: all 0.3s;
+}
+
+.social-icon i {
+    font-size: 1.5rem;
+    color: #FF6B6B;
+}
+
+.social-icon:hover {
+    background: #FF6B6B;
+    transform: translateY(-5px);
+}
+
+.social-icon:hover i {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .contact-card.location {
+        grid-column: span 1;
+    }
+
+    .contact-hero {
+        padding: 4rem 2rem;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+} 

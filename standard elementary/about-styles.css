@@ -1,0 +1,208 @@
+.about-hero {
+    background: linear-gradient(rgba(255, 107, 107, 0.8), rgba(255, 229, 229, 0.8)),
+                url('about-bg.jpg') center/cover;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    border-bottom: 15px solid #FFE5E5;
+    border-radius: 0 0 50% 50% / 20px;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 3px 3px 0 #FF6B6B;
+}
+
+.about-content {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.mission, .vision {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(255, 107, 107, 0.1);
+    border: 3px solid #FFE5E5;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.mission:hover, .vision:hover {
+    transform: translateY(-5px);
+}
+
+.mission i, .vision i {
+    font-size: 2.5rem;
+    color: #FF6B6B;
+    margin-bottom: 1rem;
+}
+
+.mission h2, .vision h2 {
+    color: #FF6B6B;
+    margin-bottom: 1rem;
+}
+
+.history {
+    margin: 4rem 0;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(255, 107, 107, 0.1);
+    border: 3px solid #FFE5E5;
+}
+
+.history h2 {
+    color: #FF6B6B;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.school-logo {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 15px rgba(255, 107, 107, 0.1);
+    border: 3px solid #FFE5E5;
+    transition: transform 0.3s;
+}
+
+.school-logo:hover {
+    transform: scale(1.05);
+}
+
+.school-logo i {
+    font-size: 4rem;
+    color: #FF6B6B;
+    margin-bottom: 1rem;
+}
+
+.school-logo h3 {
+    color: #FF6B6B;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.school-logo p {
+    color: #666;
+    font-style: italic;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.milestone {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.milestone:hover {
+    transform: translateX(10px);
+    background: #FFE5E5;
+}
+
+.milestone h3 {
+    color: #FF6B6B;
+    margin-bottom: 0.5rem;
+}
+
+.milestone p {
+    color: #666;
+}
+
+.values-section {
+    margin-top: 4rem;
+}
+
+.values-section h2 {
+    color: #FF6B6B;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(255, 107, 107, 0.1);
+    border: 3px solid #FFE5E5;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card i {
+    font-size: 2rem;
+    color: #FF6B6B;
+    margin-bottom: 1rem;
+}
+
+.value-card h3 {
+    color: #FF6B6B;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 4rem 2rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .history-content {
+        grid-template-columns: 1fr;
+    }
+
+    .school-logo {
+        order: -1;
+        margin-bottom: 2rem;
+        width: 200px;
+        height: 200px;
+        padding: 2rem;
+    }
+
+    .school-logo i {
+        font-size: 3rem;
+    }
+} 
